@@ -10,7 +10,7 @@ document.ready(function () {
 	});
 
 	// get status of API
-	$.getJSON("http://107.21.37.236:5001/api/v1/status/", (data) => {
+	$.getJSON("http://107.21.37.236:5003/api/v1/status/", (data) => {
 		if (data.status === "OK") {
 			$("div#api_status").addClass("available");
 		} else {
